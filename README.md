@@ -6,7 +6,7 @@ In this assignment, you have to create a ReactJS-based web page, in which you wi
 You have to replicate the experience, animation, and design as shown in the video. You can assume the dimensions for the design and components inside it
 yourself. You just need to build this specific website section as shown in the sample task video.
 
-<h3><a href='https://ankitnubathenasquaretask.netlify.app/'> Deployed site </a></h3>
+<h3><a href='https://ankitnub-athenatask.netlify.app/'> Deployed site </a></h3>
 
 ### How to run project locally
 
