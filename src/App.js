@@ -7,17 +7,20 @@ const App = () => {
   const [data, setData] = useState(null);
   const sectionsRef = useRef([null, null, null]);
   
+  
   function handleScroll() {
     for (let i = 0; i < sectionsRef.current.length; i++) {
-      const center = (sectionsRef.current[i].getBoundingClientRect().bottom + sectionsRef.current[i].getBoundingClientRect().top) / 2;
-      if (
-        sectionsRef.current[i] &&
-        center < window.innerHeight
-      ) {
-        setCurrentSection(i);
+      if(sectionsRef.current[i]){
+        const center = (sectionsRef.current[i].getBoundingClientRect().top + sectionsRef.current[i].getBoundingClientRect().bottom)/2
+        if (
+          center < window.innerHeight
+        ) {
+          setCurrentSection(i);
+        }
       }
     }
   }
+
 
   useEffect(() => {
     async function fetchData() {
